@@ -124,7 +124,7 @@ vi /etc/fstab and Comment the line with Swap Keyword<br />
   
 -----------------------------------------------------
   
-**Initialize Kubernetes Cluster**
+**Initialize Kubernetes Cluster**  Only on master
 
 kubeadm init<br />
 mkdir -p $HOME/.kube<br />
@@ -133,7 +133,7 @@ chown $(id -u):$(id -g) $HOME/.kube/config<br />
   
 ------------------------------------------------------
   
-**Installing Pod Network using Calico network**
+**Installing Pod Network using Calico network**   Only on master
 
 
 curl https://docs.projectcalico.org/manifests/calico.yaml -O<br />
