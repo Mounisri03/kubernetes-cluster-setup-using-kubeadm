@@ -141,7 +141,7 @@ kubectl apply -f calico.yaml<br />
 kubectl get pods -n kube-system<br />
 
 
-Link for for attaching the worker nodes to the master node
+Link for for attaching the worker nodes to the master node<br />
 kubeadm token create --print-join-command
 ----------------------------------------------------
 
